@@ -7,13 +7,13 @@
 body { 
     font-size: 16px; 
     line-height: 32px;
-    font-family: Cambria;
-    color: black;
+    font-family: /* Ubuntu, sans-serif */;
+    color: black/* #xxxxxx */;
 }
 
 h1 {
-    font-size: 1.5rem/* x.xrem  (rem is a unit of measure) */;
-    color: black;
+    font-size: /* x.xrem  (rem is a unit of measure) */;
+    color: whitesmoke/* #xxxxxx */;
 }
 
 h2 {
@@ -25,13 +25,13 @@ h2 {
 header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;
-    max-width: 300px/* xxxpx (px = pixel is a unit of measure)  */;
+    max-width: /* xxxpx (px = pixel is a unit of measure)  */;
 }
 
 header, footer, footer a {
     text-align: center;
-    background-color: /* */;
-    color: black;
+    background-color: Black/* */;
+    color: whitesmoke;
 }
 
 header img {
