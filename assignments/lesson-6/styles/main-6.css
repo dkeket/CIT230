@@ -1,0 +1,75 @@
+/* Delete these CSS comments after reading. */
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    margin: 2%;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;  /*Declare the base font-family */
+    background-color:#F0F8FF;
+
+}
+
+header, nav, main, footer { /* the comma        between the selectors means apply the following CSS declarations to all of the listed elements */
+    max-width: ______; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+}
+
+header {}
+header h1 {
+    font-family: 'Cabin Sketch', cursive;
+    margin: 0;
+    font-weight: bolder;
+    font-size: 450%;
+}
+header h2{
+    font-family: 'Homemade Apple',cursive;
+    font-weight: 100;
+}
+header figure.logo {
+    margin: 0;
+    float: left;
+    width:200px; 
+    height: auto;}
+
+nav {
+    clear: left
+}
+nav button {}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 14px;
+    overflow: hidden;
+    background: #808080;}
+nav ul li { display: inline;}
+nav ul li a {display: inline;
+    padding: 14px 16px;
+    color: white;
+    text-decoration: none}
+nav ul li.active a {
+    color: white;}
+nav ul li a:hover {
+    background-color: #D3D3D3;
+    color: black;}
+nav ul.hide{
+    display: none;
+}
+main {}
+main h2 {}
+main figure { 
+    margin: 0 0 .2rem 2%;
+    width:96%; }
+main figure img {  
+    width: 60%; 
+    height: auto;
+}
+main picture img {
+    margin: 0px;
+    width: 50px; 
+    height:50px;}
+.forecast {
+    display: none;}
+main table, th, td {
+    border: 1px solid black;}
+footer {}
