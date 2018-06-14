@@ -39,7 +39,9 @@ header img {
     height: auto;
     float: center;
 }
-
+ol {
+    list-style-position: inside;
+}
 footer {
     font-size: smaller;
 }
