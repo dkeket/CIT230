@@ -11,8 +11,8 @@ body {
 
 }
 
-header, nav, main, footer { /* the comma        between the selectors means apply the following CSS declarations to all of the listed elements */
-    max-width: ; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+    max-width: 1300px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
 .header{
     display: flex;
@@ -96,8 +96,8 @@ main h3 {
     .wsum{display: none;}
 main figure { 
     align-self: center;
-    margin: 0 0 .2rem 2center%;
-    width:70%; }
+    margin: 0 0 .2rem 2%;
+    width:70%;}
 main figure img {  
     width: 100%; 
     height: auto;
@@ -201,9 +201,7 @@ main picture img {
     justify-content: center;
     border: 1px solid grey;
     background: white;
-    box-shadow: 2px 2px 2px grey;
-}   
-}
+    box-shadow: 2px 2px 2px grey;}
 .thx { 
     font-size: 120%;
 }
