@@ -2,7 +2,7 @@
 
     /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
     .forecast{display: block;}
-    section.forecast { ______ }  /* show the 10-day forecast with the medium view and up */
+    section.forecast { 900px }  /* show the 10-day forecast with the medium view and up */
     nav {/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cedce7+0,596a72+100 */
     background: #cedce7; /* Old browsers */
     background: -moz-linear-gradient(top, #cedce7 0%, #596a72 100%); /* FF3.6-15 */

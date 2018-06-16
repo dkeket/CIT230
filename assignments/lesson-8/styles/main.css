@@ -5,14 +5,14 @@
 
 body {
     margin: 0;
-    font-size: 16px;
+    font-size: 1800px;
     font-family: 'Open Sans', sans-serif;  /*Declare the base font-family */
     background-color:#F0F8FF;
 
 }
 
 header, nav, main, footer { /* the comma        between the selectors means apply the following CSS declarations to all of the listed elements */
-    max-width: ______; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+    max-width: ; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
 .header{
     display: flex;
@@ -61,7 +61,6 @@ nav {
             }
             nav ul li a {
                 display: flex;
-                flex: nowrap;
                 padding: 14px 16px;
                 color: black;
                 width: 100%;
