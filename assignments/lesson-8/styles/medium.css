@@ -45,6 +45,8 @@
                 text-align: center;
             }
     .tempsum {display: none;}
+    .wsum {display: flex;
+            justify-content: center;}
     .Grid {
         display: grid;
         grid-template-columns: repeat(2,1fr);
