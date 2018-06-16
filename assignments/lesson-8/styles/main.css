@@ -27,12 +27,7 @@ header, nav, main, footer { /* the comma        between the selectors means appl
     .logo3 {
         font-family: 'Homemade Apple',cursive;
         font-weight: 100;
-        padding: 6px;}
-.navarea {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    }   
+        padding: 6px;}  
 .main {
     display: flex;
     flex-direction: column;}
@@ -41,29 +36,35 @@ header, nav, main, footer { /* the comma        between the selectors means appl
     flex-direction: column;}
 nav {
     display: flex;
-    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
     background-color: rgba(96,96,96,.8);
     }
     nav button {
-        display: flex;
+        display:flex;
         margin: .2rem 2%;
         background: transparent;
         border: none;
         font-size: 1.6rem;
         }
     nav ul {
+        display: inline-block;
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
         }
         nav ul li { 
-            display: flex;
+            display: block;
+            align-content: center;
             }
             nav ul li a {
                 display: flex;
+                flex: nowrap;
                 padding: 14px 16px;
                 color: black;
+                width: 100%;
                 text-decoration: none;
                 border-top: 1px solid rgba(0,0,0,0.2);
                 }
@@ -79,46 +80,115 @@ nav {
         display: none;
         }
 main {
+    padding: 10px;
     margin: 12px;
 }
+main h2{
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
 main h2 {}
+main h3 {
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    vertical-align: center;}
+    .wsum{display: none;}
 main figure { 
-    margin: 0 0 .2rem 2%;
-    width:96%; }
+    align-self: center;
+    margin: 0 0 .2rem 2center%;
+    width:70%; }
 main figure img {  
-    width: 60%; 
+    width: 100%; 
     height: auto;
+    border-radius: 4px;
 }
 main picture img {
+    display: block;
+    border: 0;
     margin: 0px;
-    width: 50px; 
-    height:50px;}
+    width: 30px; 
+    height:30px;}
 .forecast {
     display: none;}
-main table, th, td {
-    border: 1px solid black;}
+.summary {
+    display: none;
+    border-collapse: collapse;
+    box-shadow: 5px 10px 8px #888888;;
+    border: 1px solid darkgrey;
+    table-layout: fixed;
+    width: 100%;
+    background: white;}
+    .summary th {
+        background: lightgrey;
+        padding: 5px;
+        text-align: center;
+    }
+    .summary td {
+        padding: 5px;
+        text-align: center;
+    }
+.tempsum {
+        border-collapse: collapse;
+}
+.daytable, th, td {
+    border-collapse: collapse;
+    box-shadow: 5px 10px 8px #888888;;
+    border: 1px solid darkgrey;
+    table-layout: fixed;
+    width: 100%;
+    background: white;
+    }
+    .daytable th{ 
+        background: lightgrey;
+        padding: 5px;
+        text-align: center;
+    }
+    .daytable td{ 
+        padding: 5px;
+        text-align: center;}
 .Grid {
     display: grid;
     justify-items: center;
 }
-.form {
-    margin: 12px;
-    padding: 8px;
-}
-.formintro {
-    margin: 12px;
-}
-#info {
-    margin: 2px;
-}
-.main {
+.main1 {
     display: flex;
+    width: 80%;
     flex-direction: column;
-}
+    justify-content: center;
+    align-content: center;
+    align-items: center;}
+    .form {
+        margin: inherit;
+        display: flex;
+        padding: 8px;
+        width: 100%;
+        background: white;
+        border: 1px solid grey;
+        box-shadow: 6px 6px 6px grey;
+    }
+        .formintro {
+            margin: 12px;
+            align-items: center;
+            justify-content: center;
+        }
+            #info {
+                margin: 2px;
+            }
+        .comments{ width: 100%}
+        .main2 {
+    display: flex;
+    }
 .thanks {
+    margin: 10px;
+    padding: 80px;
+    width: 98%;
     display: flex;
     flex-direction: column;
+    align-content: center;
     align-items: center;
+    justify-content: center;
     border: 1px solid grey;
     background: white;
     box-shadow: 2px 2px 2px grey;
@@ -127,7 +197,15 @@ main table, th, td {
 .thx { 
     font-size: 120%;
 }
+.relatedinfo {
+    text-align: left;
+    margin-right: 50%;
+    margin-bottom: 12px;
+    margin-left: 0;
+    padding-bottom: 2px;
+    border-bottom: 1px solid grey;}
 footer {
+    align-items: center;
     margin: 12px
 }
 

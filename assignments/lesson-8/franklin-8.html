@@ -36,24 +36,54 @@
       <main class="main">
           <br>
          <br><h2>The City of Franklin</h2>
-          <h3>Weather Summary</h3>  
-            <div class="current forecast">
-            <picture class="weathericon">
-                <img src="images/sunny-icon2.png" alt="weather icon" >
-            </picture><br>
-                Sunny
+          <h3 class="wsum">Weather Summary</h3>  
+          <table class="summary">
+              <tr>
+                  <th>
+                      <picture class="weathericon">
+                        <img src="images/sunny-icon2.png" alt="weather icon" >
+                      </picture></th>
+                  <th>High</th>
+                  <th>Low</th>
+                  <th>Precipitation</th>
+                  <th>Wind Speed</th>
+                  <th>Wind Chill</th>
+              </tr>
+              <tr>
+                  <td>Sunny</td>
+                  <td><span id="highTemp">89</span>&deg;F</td>
+                  <td><span id="lowTemp">70</span></td>
+                  <td>10%</td>
+                  <td><span id="windSpeed">4</span> mph NW</td>
+                  <td><span class="windChill"></span>&deg;F</td>
+              </tr>
+          </table>
+          
+            <div class="tempsum">
+                <table class="tempsum">
+                    <tr><th>Weather Summary</th></tr>
+                    <tr>
+                        <td>Sunny</td>
+                    </tr>
+                    <tr>
+                        <td>High: <span id="highTemp">89</span>&deg;F</td>
+                    </tr>
+                    <tr>
+                        <td>Low: <span id="lowTemp">70</span></td>
+                    </tr>
+                    <tr>
+                        <td>Precipitation: 10%</td>
+                    </tr>
+                    <tr>
+                        <td>Wind Speed:<span id="windSpeed">4</span> mph NW</td>
+                    </tr>
+                    <tr>
+                        <td>Wind Chill:<span class="windChill"></span>&deg;F</td>
+                    </tr>
+                </table>        
             </div>
-            <section>
-                <div class="highlow">
-                    <p>High: <span id="highTemp">89</span>&deg;F</p>  
-                    <p>Low: <span id="lowTemp">70</span>&deg;F</p>  
-                </div> 
-                <div class="conditions">
-                    <p>Precipitation: 10%</p>  
-                    <p>Wind Speed: <span id="windSpeed">4</span>mph NW</p> 
-                    <p>Wind Chill: <span id="windChill"></span>&deg;F</p>
-                </div>           
-            </section>
+        <br><br>
+    
         <figure>
           <img src="images/Optimized-franklin-original.jpeg" alt="franklin" sizes= "50vw"
                srcset= "images/franklin-small.jpg 300w,
@@ -63,7 +93,7 @@
           <br>
         <section class="forecast">
           <h3>10 Day Forecast</h3>
-          <table>
+          <table class="daytable">
             <thead>
               <tr>
                 <th>Day 1</th>

@@ -1,7 +1,7 @@
 @media only screen and (min-width: 64em) {
     .forecast{display: block;}
    nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
-    nav ul.hide{display: block;}
+    nav ul.hide{display: flex;}
     nav ul li {float: left;}
     
     .Grid {
@@ -12,7 +12,7 @@
     Grid-cell figure img {
         display: grid; 
         width: 100%;
-        align-content: center;
+        align-self: center;
   }
     main figure img:hover{
         box-shadow: 8px 8px 4px grey;
