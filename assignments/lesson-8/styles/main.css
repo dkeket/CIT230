@@ -99,6 +99,9 @@ main figure {
     margin: 0 0 .2rem 2%;
     width:70%;}
 main figure img {  
+    display: grid;
+    margin: 0;
+    padding: 0;
     width: 100%; 
     height: auto;
     border-radius: 4px;
@@ -169,6 +172,10 @@ main picture img {
     padding: 0;
     justify-content: center;
     align-self: center; }
+.gall {
+    display: grid;
+    margin: 50px;
+}
     .form {
         margin: inherit;
         display: flex;
