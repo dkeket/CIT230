@@ -1,0 +1,25 @@
+@media only screen and (min-width: 64em) {
+    main {
+        margin: 0 30px;
+    }
+    footer { margin: 0 30px;}
+    .forecast{display: block;}
+   nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
+    nav ul.hide{display: flex;}
+    nav ul li {float: left;}
+    
+    .Grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(350px, 1fr) );
+        
+    }
+    Grid-cell figure img {
+        display: grid; 
+        width: 100%;
+        align-self: center;
+  }
+    main figure img:hover{
+        box-shadow: 8px 8px 4px grey;
+         
+    }
+}

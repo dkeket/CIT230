@@ -1,0 +1,298 @@
+/* Delete these CSS comments after reading. */
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;  /*Declare the base font-family */
+    background-color:#F0F8FF;
+}
+
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+    max-width: 1900px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;}
+    .logo2{
+        font-family: 'Cabin Sketch', cursive;
+        margin: 6px;
+        font-weight: bolder;
+        font-size: 400%;}
+    .logo3 {
+        font-family: 'Homemade Apple',cursive;
+        font-weight: 100;
+        padding: 6px;}  
+.main {
+    display: flex;
+    flex-direction: column;}
+.footer{
+    display: flex;
+    flex-direction: column;}
+nav {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: rgba(96,96,96,.8);
+    }
+    nav button {
+        display:flex;
+        margin: .2rem 2%;
+        background: transparent;
+        border: none;
+        font-size: 1.6rem;
+        }
+    nav ul {
+        display: inline-block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        }
+        nav ul li { 
+            display: block;
+            align-content: center;
+            }
+            nav ul li a {
+                display: flex;
+                padding: 14px 16px;
+                color: black;
+                width: 100%;
+                text-decoration: none;
+                border-top: 1px solid rgba(0,0,0,0.2);
+                }
+                nav ul li.active a {
+                    background-color: rgba(0,0,0,.6);
+                    color: white;
+                    }
+                nav ul li a:hover {
+                        background-color: rgba(0,0,0,.3);
+                        color: white;
+                        }
+    nav ul.hide{
+        display: none;
+        }
+main {
+    padding: 10px;
+    margin: 12px;
+}
+main h2{
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+main h2 {}
+main h3 {
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    vertical-align: center;}
+    .wsum{display: none;}
+
+main figure img {  
+    display: grid;
+    margin: 0;
+    padding: 0;
+    width: 100%; 
+    height: auto;
+    border-radius: 4px;
+}
+main picture img {
+    display: block;
+    border: 0;
+    margin: 0px;
+    width: 30px; 
+    height:30px;}
+.forecast {
+    display: none;}
+.summary {
+    display: none;
+    border-collapse: collapse;
+    box-shadow: 5px 10px 8px #888888;;
+    border: 1px solid darkgrey;
+    table-layout: fixed;
+    width: 100%;
+    background: white;}
+    .summary th {
+        background: lightgrey;
+        padding: 5px;
+        text-align: center;
+    }
+    .summary td {
+        padding: 5px;
+        text-align: center;
+    }
+.tempsum {
+        margin: auto;
+        padding: 2px;
+        align-self: center;
+        border-collapse: collapse;
+}
+.tempsum th {
+    margin: 0;
+    padding: 8px;
+    background: lightgrey;
+}
+.tempsum td { 
+    margin: 0;
+    padding: 2px;
+    background: white;}
+.daytable, th, td {
+    border-collapse: collapse;
+    box-shadow: 5px 10px 8px #888888;;
+    border: 1px solid darkgrey;
+    table-layout: fixed;
+    width: 100%;
+    background: white;
+    }
+    .daytable th{ 
+        background: lightgrey;
+        padding: 5px;
+        text-align: center;
+    }
+    .daytable td{ 
+        padding: 5px;
+        text-align: center;}
+.Grid {
+    display: grid;
+    align-self: center;
+}
+.gallerymain {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-self: center; }
+.gall {
+    display: grid;
+    margin: 50px;
+}
+    .form {
+        margin: inherit;
+        display: flex;
+        padding: 8px;
+        width: 100%;
+        background: white;
+        border: 1px solid grey;
+        box-shadow: 6px 6px 6px grey;
+    }
+        .formintro {
+            margin: 12px;
+            align-items: center;
+            justify-content: center;
+        }
+            #info {
+                margin: 2px;
+            }
+        .comments{ width: 100%}
+.main2 {
+    display: flex;       
+    }
+.thanks {
+    margin: 10px;
+    padding: 80px;
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid grey;
+    background: white;
+    box-shadow: 2px 2px 2px grey;}
+.thx { 
+    font-size: 120%;
+}
+.relatedinfo {
+    text-align: left;
+    margin-right: 50%;
+    margin-bottom: 12px;
+    margin-left: 0;
+    padding-bottom: 2px;
+    border-bottom: 1px solid grey;}
+#townInfo {display: none;}
+footer {
+    align-content: center;
+    margin: 12px
+}
+
+/*-- Below is my the old CSS usings Floats etc...
+header {
+    margin: 12px;
+}
+header h1 {
+    font-family: 'Cabin Sketch', cursive;
+    margin: 0;
+    font-weight: bolder;
+    font-size: 400%;
+    display: block;
+}
+header h2{
+    font-family: 'Homemade Apple',cursive;
+    font-weight: 100;
+}
+header figure.logo {
+    margin: 0;
+    float: left;
+    width:200px; 
+    height: auto;}
+
+nav {
+    clear: left;
+    background-color: rgba(96,96,96,.8);}
+nav button {
+    margin: .2rem 2%;
+    background: transparent;
+    border: none;
+    font-size: 1.6rem;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+nav ul li { display: inline;}
+nav ul li a {
+    display: block;
+    padding: 14px 16px;
+    color: black;
+    text-decoration: none;
+    border-top: 1px solid rgba(0,0,0,0.2);}
+nav ul li.active a {
+    background-color: rgba(0,0,0,.6);
+    color: white;}
+nav ul li a:hover {
+    background-color: rgba(0,0,0,.3);
+    color: white;}
+nav ul.hide{
+    display: none;
+}
+main {
+    margin: 12px;
+}
+main h2 {}
+main figure { 
+    margin: 0 0 .2rem 2%;
+    width:96%; }
+main figure img {  
+    width: 60%; 
+    height: auto;
+}
+main picture img {
+    margin: 0px;
+    width: 50px; 
+    height:50px;}
+.forecast {
+    display: none;}
+main table, th, td {
+    border: 1px solid black;}
+footer {
+    margin: 12px
+}
+*/

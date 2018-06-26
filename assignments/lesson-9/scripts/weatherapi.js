@@ -8,5 +8,3 @@ weatherObject.onload =  function() {
         console.log(weatherInfo);
     document.getElementById("current-temp").innerHTML= weatherInfo.list["0"].main.temp;
 } // end function
-
-
