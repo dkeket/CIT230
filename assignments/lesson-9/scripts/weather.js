@@ -1,5 +1,5 @@
 var weatherObject = new XMLHttpRequest();
-weatherObject.open('GET', 'http://api.openweathermap.org/data/2.5/forecast?id=4156210&appid=49ff59e45f2f814c5595aee9ab322e82&units=imperial',true);
+weatherObject.open('GET', 'https://api.openweathermap.org/data/2.5/forecast?id=4156210&appid=49ff59e45f2f814c5595aee9ab322e82&units=imperial',true);
 
 weatherObject.send();
 
@@ -17,10 +17,7 @@ weatherObject.onload =  function() {
         list.getElementsByClassName('fwindSpeed')[1].innerHTML = Math.round(weatherInfo.list["0"].wind.speed);
         list.getElementsByClassName('fwindChill')[0].innerHTML = Math.round(weatherInfo.list["0"].wind.deg);
         list.getElementsByClassName('fwindChill')[1].innerHTML = Math.round(weatherInfo.list["0"].wind.deg);
-
-
-        
-} // end function
+        } // end function
 
 
 
