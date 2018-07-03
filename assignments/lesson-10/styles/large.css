@@ -7,17 +7,14 @@
    nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
     nav ul.hide{display: flex;}
     
-    .Grid {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(350px, 1fr) );
-    }
-    figcaption {
-        padding: 20px 0;
-    }
     main figure img:hover{
-        box-shadow: 8px 8px 4px grey;
-         
+        box-shadow: 8px 8px 4px grey;  
     }
+    .gallerymain {
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 1em;
+        margin:1em;}
     div.cityInfo {
         display: inline-flex;
         justify-content: space-around;

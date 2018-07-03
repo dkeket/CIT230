@@ -181,21 +181,19 @@ main #homeImg img {
         .daytable td{ 
         padding: 5px;
         text-align: center;}
-.gallerymain {
-    display: grid;}
-    .Grid img {
-        display: grid;
-        max-width: 100%;
-        padding: 20px;
-    }
-.Grid-cell{
-        align-self: center;
-        width: 100%;
-        background-color: white;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin-bottom: 25px;
-        margin-top: 25px;
-}
+.grid {
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;}
+    .cell {
+        text-align: center;
+        padding: 0 0 25px;}
+        .grid .cell img { 
+            width: 100%;}
+
 .formintro {
             margin: 12px;
             align-items: center;

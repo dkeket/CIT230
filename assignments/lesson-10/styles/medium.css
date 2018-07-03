@@ -53,23 +53,6 @@
     .tempsum {display: none;}
     .wsum {display: flex;
             justify-content: center;}
-    .Grid {
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-gap: 1em;
-        margin:1em;
-    }
-    
-    Grid-cell figure img {
-        display: grid; 
-        width: 100%;   
-    }
-    figcaption { display: grid;}
-    .gallerymain {
-        display: grid;
-        width: 100%;
-        margin: 0;
-        padding: 0; 
     }
     .main1 {
         display: flex;
@@ -99,6 +82,11 @@
         margin: 0;
         display: block;
         width: 70%;}
+    .gallerymain {
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 1em;
+        margin:1em;}
     div.cityInfo {
         display: block;}
     div.polaroid {
@@ -115,7 +103,6 @@
     div.container {
         text-align: justify;
         padding: 4px 50px;
-        
     }
    /*     */
     
