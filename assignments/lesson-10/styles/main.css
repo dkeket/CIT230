@@ -127,6 +127,7 @@ main h3 {
 .town-article {
     margin: 30px;
 }
+div.chart {width: 50%;}
 main #homeImg img {
     display: flex;
     align-self: center;
@@ -181,6 +182,10 @@ main #homeImg img {
         .daytable td{ 
         padding: 5px;
         text-align: center;}
+.gallerymain {display:grid
+              grid-template-column: (1, 1fr);
+              max-width: 80%;
+              min-width: 50%;}
 .grid {
     width: 80%;
     background-color: white;
